@@ -11,7 +11,7 @@ Example: the template fixed a bug in a configuration file. You don't want to app
 To update your project, go into its directory and run:
 
 ```bash
-uvx --with copier-templates-extensions copier update --trust --vcs-ref HEAD --defaults
+uvx --with copier-templates-extensions copier update --trust --defaults
 ```
 
 Your repository must be clean (no modified files) when running this command.
@@ -19,13 +19,9 @@ Your repository must be clean (no modified files) when running this command.
 **Flags explained:**
 
 - `--trust`: Allow the template to run tasks (required for post-update hooks).
-- `--vcs-ref HEAD`: Use the latest version of the template from the main branch.
 - `--defaults`: Accept all previous answers without prompting. Remove this flag if you want to review and change your answers.
 
 ## How it works
-
-!!! warning "Stale template versions"
-    Copier caches Git refs and may fetch an older version of the template. If the update does not pick up the latest release, pin the ref explicitly with `--vcs-ref HEAD` or `--vcs-ref TAG` (e.g. `--vcs-ref v0.7.0`).
 
 Copier will use the previous answers you gave when generating the project, to re-generate it in a temporary directory, compare the two versions, and apply patches to your documents. When it's not sure, or when there's a conflict, it will ask you if you want to skip that change or force it. Your previous answers are stored in the `.copier-answers.yml` file at the root of the project directory:
 

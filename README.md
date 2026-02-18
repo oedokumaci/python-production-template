@@ -26,7 +26,7 @@ An AI-native [Copier](https://github.com/copier-org/copier) template for Python 
 Make sure you have [Git](https://git-scm.com/) and [uv](https://docs.astral.sh/uv/) installed, then:
 
 ```bash
-uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/python-production-template" /path/to/your/new/project
+uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/python-production-template" /path/to/your/new/project
 ```
 
 See the [documentation](https://oedokumaci.github.io/python-production-template) for the full guide.
@@ -36,7 +36,7 @@ See the [documentation](https://oedokumaci.github.io/python-production-template)
 To pull in the latest template changes to an already-generated project:
 
 ```bash
-uvx --with copier-templates-extensions copier update --trust --vcs-ref HEAD --defaults
+uvx --with copier-templates-extensions copier update --trust --defaults
 ```
 
 See the [update documentation](https://oedokumaci.github.io/python-production-template/update) for details.

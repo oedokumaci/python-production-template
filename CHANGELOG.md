@@ -6,9 +6,27 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
-## Unreleased
+## [1.0.0](https://github.com/oedokumaci/python-production-template/releases/tag/1.0.0) - 2026-02-18
 
-<small>[Compare with latest](https://github.com/oedokumaci/python-production-template/compare/0.15.0...HEAD)</small>
+<small>[Compare with first commit](https://github.com/oedokumaci/python-production-template/compare/ad5932b04cecfcc6e6d1311f10082289cbc6ed76...1.0.0)</small>
+
+This is the first release of **python-production-template** as an independent repository, detached from the upstream [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv) fork.
+
+### Features
+
+- **AI-native development** — Claude Code integration with `CLAUDE.md`, custom skills (`/commit`, `/release`, `/review-pr`, `/docs-deploy`), and Cursor IDE support
+- **Modern Python toolchain** — uv for dependency management, Ruff for formatting/linting, ty for type checking, taskipy for task running
+- **Production-ready scaffold** — CLI support, structured logging (loguru), pre-commit hooks, GitHub Actions CI/CD, auto-generated changelog
+- **Documentation site** — Zensical with mkdocstrings for auto-generated API docs
+- **Optional marimo notebooks** — interactive notebook support for data science workflows
+- **All open-source licenses** — every license from choosealicense.com
+- **Smart defaults** — git email and username auto-detected from git config
+
+### Fixed
+
+- **Clean tag history** — removed 71 upstream tags (1.0.0–1.11.9) that polluted version resolution
+- **No more `--vcs-ref HEAD` workaround** — copier now correctly resolves the latest version without manual ref pinning
+- **Independent repository** — no longer marked as a GitHub fork
 
 <!-- insertion marker -->
 ## [0.15.0](https://github.com/oedokumaci/python-production-template/releases/tag/0.15.0) - 2026-02-17

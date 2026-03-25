@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [1.0.1](https://github.com/oedokumaci/python-production-template/releases/tag/1.0.1) - 2026-03-25
+
+<small>[Compare with 1.0.0](https://github.com/oedokumaci/python-production-template/compare/1.0.0...1.0.1)</small>
+
+### Fixed
+
+- Bump `actions/upload-artifact` from v5 to v6 for Node.js 24 deprecation ([2b3fe83](https://github.com/oedokumaci/python-production-template/commit/2b3fe83) by Berk Idem).
+
 ## [1.0.0](https://github.com/oedokumaci/python-production-template/releases/tag/1.0.0) - 2026-02-18
 
 <small>[Compare with first commit](https://github.com/oedokumaci/python-production-template/compare/ad5932b04cecfcc6e6d1311f10082289cbc6ed76...1.0.0)</small>
@@ -840,4 +848,3 @@ This is the first release of **python-production-template** as an independent re
 - Remove 'v' prefix from versions ([3c95d34](https://github.com/oedokumaci/python-production-template/commit/3c95d344d445e8ac951aa10dac11695228bbefa3) by Timothée Mazzucotelli).
 - Remove useless noqa ([5725fc3](https://github.com/oedokumaci/python-production-template/commit/5725fc3dc1dccb7ec269d8218e2ae5b9ead70e83) by Timothée Mazzucotelli).
 - Remove flake8.ini, now using flakehell ([36f7630](https://github.com/oedokumaci/python-production-template/commit/36f7630d1919b501b52b6d732b310400acd63c5e) by Timothée Mazzucotelli).
-
